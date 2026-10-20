@@ -9,8 +9,6 @@ import {
   ChevronDown,
   GraduationCap,
   ArrowRight,
-  BookOpen,
-  Sparkles,
   PhoneCall,
 } from "lucide-react";
 import { siteConfig } from "@/config/site";

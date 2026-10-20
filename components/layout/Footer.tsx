@@ -42,6 +42,10 @@ export function Footer() {
                 <span>{siteConfig.links.contactEmail}</span>
               </div>
               <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-teal-400 shrink-0" />
+                <span>{siteConfig.links.contactPhone}</span>
+              </div>
+              <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-teal-400 shrink-0" />
                 <span>{siteConfig.links.workingHours}</span>
               </div>
@@ -121,10 +125,10 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Institutional Enquiries */}
+          {/* Col 4: Institutional Links */}
           <div>
             <h3 className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-4">
-              Organization & Action
+              Organization
             </h3>
             <ul className="space-y-2.5 text-sm">
               {siteConfig.footerNav.organization.map((item) => (

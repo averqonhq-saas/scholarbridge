@@ -7,7 +7,6 @@ import {
   Building2,
   Phone,
   HelpCircle,
-  FileText,
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { EnquiryForm } from "@/components/forms/EnquiryForm";
@@ -129,6 +128,10 @@ export default function ContactPage({ searchParams }: ContactPageProps) {
                 <div className="flex items-center gap-2.5">
                   <Mail className="w-4 h-4 text-amber-400 shrink-0" />
                   <span>{siteConfig.links.contactEmail}</span>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <Phone className="w-4 h-4 text-amber-400 shrink-0" />
+                  <span>{siteConfig.links.contactPhone}</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Clock className="w-4 h-4 text-amber-400 shrink-0" />

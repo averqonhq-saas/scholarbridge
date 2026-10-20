@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import type { Metadata } from "next";
 import {
   Code2,
@@ -14,15 +13,11 @@ import {
   FileCheck2,
   ArrowRight,
   Lightbulb,
-  CheckCircle2,
-  Building2,
-  Info,
-  Calendar,
 } from "lucide-react";
 import { collegePrograms } from "@/lib/data/college-programs";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/MotionWrapper";
+import { FadeIn } from "@/components/ui/MotionWrapper";
 
 export const metadata: Metadata = {
   title: "College & University Programs | Applied AI, Capstones & Employability",
@@ -254,24 +249,14 @@ export default function CollegeProgramsPage() {
                     </div>
                   </div>
 
-                  {/* Deliverable & Learning Outcomes */}
-                  <div className="border-t border-slate-200/80 pt-5 flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs">
-                    <div>
-                      <strong className="text-navy-950 font-bold block mb-1">
-                        Practical Deliverable:
-                      </strong>
-                      <span className="text-slate-600">
-                        {program.practicalDeliverable}
-                      </span>
-                    </div>
-                    <div className="shrink-0">
-                      <Link
-                        href={`/contact?interest=${encodeURIComponent(program.title)}`}
-                        className="text-teal-700 font-bold hover:underline"
-                      >
-                        Request Syllabus Monograph →
-                      </Link>
-                    </div>
+                  {/* Practical Deliverable */}
+                  <div className="border-t border-slate-200/80 pt-4 text-xs">
+                    <strong className="text-navy-950 font-bold block mb-1">
+                      Practical Deliverable:
+                    </strong>
+                    <span className="text-slate-600">
+                      {program.practicalDeliverable}
+                    </span>
                   </div>
                 </div>
               </div>

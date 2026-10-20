@@ -83,29 +83,29 @@ export const programProcessSteps: ProcessStep[] = [
     step: "01",
     title: "Understand Institutional Needs",
     description:
-      "We begin with in-depth consultative listening with school principals, college deans, and academic heads to identify curriculum gaps, student demographics, and specific institutional objectives.",
-    deliverables: ["Institutional needs audit", "Demographic & readiness review", "Resource & schedule alignment"],
+      "We consult with school principals, deans, and academic coordinators to identify curriculum gaps, student demographics, and institutional objectives.",
+    deliverables: ["Institutional needs audit", "Cohort readiness review", "Schedule alignment"],
   },
   {
     step: "02",
     title: "Design a Suitable Program",
     description:
-      "Our educational strategists create a tailored modular curriculum with clear learning rubrics, interactive materials, and verified mentor schedules aligned with your academic calendar.",
-    deliverables: ["Customized syllabus & timetable", "Participant workbook rubrics", "Mentor & speaker matching"],
+      "Our educational strategists create a tailored modular curriculum with clear rubrics, interactive materials, and matched practitioner schedules.",
+    deliverables: ["Customized syllabus & timetable", "Participant workbooks", "Mentor matching"],
   },
   {
     step: "03",
     title: "Deliver Interactive Experiences",
     description:
-      "Specialist trainers and industry practitioners facilitate experiential sessions, hands-on labs, guided discussions, and safe student advisory circles on campus or off-site.",
-    deliverables: ["Experiential workshop delivery", "Continuous formative feedback", "Safe, inclusive participation"],
+      "Certified trainers and industry practitioners lead experiential workshops, hands-on labs, and student advisory circles.",
+    deliverables: ["Interactive workshop delivery", "Continuous feedback", "Inclusive engagement"],
   },
   {
     step: "04",
-    title: "Review Outcomes & Recommend Next Steps",
+    title: "Review Outcomes & Next Steps",
     description:
-      "We conclude every intervention with evidence-based reporting, student sentiment feedback, and institutional recommendations to ensure lasting positive impact.",
-    deliverables: ["Comprehensive outcome monograph", "Student feedback analytics", "Long-term institutional roadmap"],
+      "We conclude every intervention with evidence-based reporting, student feedback analytics, and actionable institutional recommendations.",
+    deliverables: ["Outcome summary report", "Feedback analytics", "Follow-up roadmap"],
   },
 ];
 
@@ -119,37 +119,37 @@ export const whyPartnerWithUs: PartnerBenefit[] = [
   {
     title: "Student-Centred Approach",
     description:
-      "Every intervention is designed around the emotional, cognitive, and social developmental stages of learners rather than rigid one-size-fits-all curricula.",
+      "Every program is tailored to the emotional, cognitive, and social development stages of learners.",
     iconName: "UserCheck",
   },
   {
-    title: "Practical & Experiential Learning",
+    title: "Practical & Experiential",
     description:
-      "We replace passive slide listening with tactile building, case studies, role-play scenarios, and real community problem-solving.",
+      "We replace passive listening with hands-on building, case studies, role-play scenarios, and real problem-solving.",
     iconName: "Layers",
   },
   {
-    title: "Age-Appropriate Program Design",
+    title: "Age-Appropriate Design",
     description:
-      "Content is scientifically tailored: gentle sensory activities for young learners, respectful identity support for teens, and industry-grade challenges for university seniors.",
+      "Curriculum is calibrated for each age group—from foundational K-12 activities to industry-grade university capstones.",
     iconName: "Smile",
   },
   {
     title: "Career-Focused Development",
     description:
-      "From stream discovery in Grade 8 to technical capstones in engineering final year, students build tangible competencies that bridge academic theory to lifelong vocations.",
+      "From stream discovery in Grade 8 to technical capstones in college, students build tangible, lifelong competencies.",
     iconName: "Target",
   },
   {
-    title: "Flexible Institutional Delivery",
+    title: "Flexible Delivery Models",
     description:
-      "Programs can be deployed as short weekend sprints, weekly timetable integrations, intensive vacation bootcamps, or residential outbound immersions.",
+      "Programs deploy as single-day intensives, weekly timetable integrations, vacation bootcamps, or outbound immersions.",
     iconName: "Sliders",
   },
   {
     title: "Outcome-Oriented Reporting",
     description:
-      "Institutional leadership receives detailed qualitative feedback, attendance analytics, and actionable guidance to support ongoing accreditation and parent reviews.",
+      "Leadership receives qualitative feedback, attendance analytics, and actionable insights to support institutional reviews.",
     iconName: "FileCheck",
   },
 ];

@@ -2,10 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, CheckCircle2, Sparkles, Building2, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
 import { FadeIn } from "@/components/ui/MotionWrapper";
 
 export function HeroSection() {
@@ -116,12 +114,6 @@ export function HeroSection() {
                       <BookOpen className="w-4 h-4" />
                     </span>
                   </div>
-                </div>
-
-                {/* Floating pill badge */}
-                <div className="absolute -top-4 -right-4 bg-navy-950 text-white rounded-xl py-2 px-3.5 shadow-xl border border-navy-800 flex items-center gap-2 text-xs font-semibold hidden sm:flex">
-                  <span className="w-2 h-2 rounded-full bg-amber-400"></span>
-                  <span>Human-Centred Pedagogy</span>
                 </div>
               </div>
             </FadeIn>

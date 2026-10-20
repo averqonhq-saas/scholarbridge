@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { programProcessSteps } from "@/lib/data/home-data";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/MotionWrapper";

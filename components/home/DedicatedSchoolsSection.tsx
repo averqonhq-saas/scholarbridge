@@ -5,33 +5,22 @@ import {
   CheckCircle,
   ArrowRight,
   ShieldCheck,
-  Heart,
   Sparkles,
-  BookOpen,
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { FadeIn } from "@/components/ui/MotionWrapper";
 
 export function DedicatedSchoolsSection() {
   const schoolOfferings = [
-    { title: "Child development and counselling", anchor: "#counselling" },
-    { title: "Educational and personal guidance", anchor: "#counselling" },
-    { title: "Teenage issues & digital addiction awareness", anchor: "#health-safety" },
-    { title: "Psychometric assessments by certified evaluators", anchor: "#career-guidance" },
-    { title: "Career development programs for Grades 8–12", anchor: "#career-guidance" },
-    { title: "Parent–child engagement & dialogue sessions", anchor: "#parent-child" },
-    { title: "Train-the-Trainer programs for teachers", anchor: "#teacher-training" },
-    { title: "In-house workshops and outbound training", anchor: "#school-events" },
-    { title: "Girls' menstrual health education & wellbeing", anchor: "#health-safety" },
-    { title: "Student safety, hygiene & first-aid drills", anchor: "#health-safety" },
-    { title: "Mindfulness, peer circles & stigma-free spaces", anchor: "#sel" },
-    { title: "Social-emotional learning (SEL) frameworks", anchor: "#sel" },
-    { title: "Robotics, STEM/STEAM & tinkering labs", anchor: "#stem-innovation" },
-    { title: "Community problem-solving & civic impact", anchor: "#local-problem-solving" },
-    { title: "Inclusion, accessibility & vernacular support", anchor: "#inclusion" },
-    { title: "School annual event planning & exhibitions", anchor: "#school-events" },
+    { title: "Child Development & Professional Counselling", anchor: "#counselling" },
+    { title: "Career Guidance & Psychometrics (Grades 8–12)", anchor: "#career-guidance" },
+    { title: "Teacher Capacity Building & Train-the-Trainer", anchor: "#teacher-training" },
+    { title: "Social-Emotional Learning (SEL) & Mindfulness", anchor: "#sel" },
+    { title: "Student Health, Hygiene & Menstrual Education", anchor: "#health-safety" },
+    { title: "Digital Wellbeing & Screen Addiction Awareness", anchor: "#health-safety" },
+    { title: "Robotics, STEM & Tinkering Labs", anchor: "#stem-innovation" },
+    { title: "Parent-Child Engagement & Family Dialogue", anchor: "#parent-child" },
   ];
 
   return (

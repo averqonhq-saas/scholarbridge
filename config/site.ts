@@ -7,7 +7,7 @@ export const siteConfig = {
   url: "https://scholarbridge.edu.in",
   links: {
     contactEmail: "enquiries@scholarbridge.org",
-    contactPhone: "+91 (Institutional Helpdesk)",
+    contactPhone: "+91 80 4567 8900",
     workingHours: "Monday to Friday: 9:00 AM - 6:00 PM IST",
     linkedin: "https://linkedin.com/company/scholarbridge",
     twitter: "https://twitter.com/scholarbridge",
@@ -115,14 +115,13 @@ export const siteConfig = {
       { title: "Cybersecurity & Responsible Tech", href: "/services/colleges#cybersecurity" },
       { title: "SDG & Sustainability Projects", href: "/services/colleges#sustainability" },
       { title: "Startup & Venture Incubation", href: "/services/colleges#entrepreneurship" },
-      { title: "Industrial Visits & Expos", href: "/programs#industrial-visits" },
+      { title: "Industrial Visits & Expos", href: "/programs#industrial-visits-tours" },
     ],
     organization: [
       { title: "About Our Mission", href: "/about" },
       { title: "Program Delivery Model", href: "/about#delivery-model" },
       { title: "Institutional Partnerships", href: "/contact" },
       { title: "Request Program Proposal", href: "/contact?type=proposal" },
-      { title: "Schedule Institutional Consultation", href: "/contact?type=consultation" },
     ],
     legal: [
       { title: "Institutional Privacy Policy", href: "/privacy" },

@@ -1,22 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 import {
   Clock,
   Users,
-  MapPin,
   CheckCircle2,
   ArrowRight,
-  Sparkles,
-  Calendar,
-  Layers,
 } from "lucide-react";
 import { trainingPrograms } from "@/lib/data/training-programs";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { SectionHeader } from "@/components/ui/SectionHeader";
-import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/MotionWrapper";
+import { FadeIn } from "@/components/ui/MotionWrapper";
 
 export const metadata: Metadata = {
   title: "Workshops & Training | Experiential Formats for Schools & Colleges",

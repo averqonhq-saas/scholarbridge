@@ -12,11 +12,9 @@ import {
   Factory,
   FileCheck2,
   ArrowRight,
-  AlertCircle,
   Lightbulb,
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { collegePrograms } from "@/lib/data/college-programs";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/MotionWrapper";
@@ -66,7 +64,7 @@ export function DedicatedCollegesSection() {
                 </div>
               </div>
               <Link
-                href="/services/colleges"
+                href="/services/colleges#framework"
                 className="text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1 shrink-0 underline"
               >
                 <span>View Full Framework</span>
@@ -108,29 +106,16 @@ export function DedicatedCollegesSection() {
                       {program.shortDescription}
                     </p>
 
-                    {/* Featured Example Highlight if present */}
-                    {program.featuredExample && (
-                      <div className="bg-slate-50 rounded-xl p-3 border border-slate-200/80 mb-4">
-                        <span className="text-[10px] font-bold text-teal-800 uppercase tracking-wider block mb-1">
-                          Applied Project Deliverable:
+                    {/* Department Tags */}
+                    <div className="flex flex-wrap gap-1 mb-4">
+                      {program.targetDepartments.slice(0, 3).map((dept) => (
+                        <span
+                          key={dept}
+                          className="text-[10px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
+                        >
+                          {dept}
                         </span>
-                        <p className="text-xs font-semibold text-slate-800">
-                          {program.featuredExample.title}
-                        </p>
-                        <p className="text-[11px] text-slate-600 mt-1 line-clamp-2">
-                          {program.featuredExample.summary}
-                        </p>
-                      </div>
-                    )}
-
-                    {/* Learning outcome bullet */}
-                    <div className="text-xs text-slate-700 space-y-1 mb-4">
-                      <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">
-                        Core Competency:
-                      </span>
-                      <p className="line-clamp-2 italic text-slate-600">
-                        &quot;{program.learningOutcomes[0]}&quot;
-                      </p>
+                      ))}
                     </div>
                   </div>
 
@@ -149,30 +134,15 @@ export function DedicatedCollegesSection() {
           })}
         </StaggerContainer>
 
-        {/* Responsible Institutional Transparency Notice */}
-        <FadeIn direction="up" delay={0.2}>
-          <div className="mt-12 bg-amber-50/70 border border-amber-200/90 rounded-2xl p-5 flex items-start gap-3.5 max-w-4xl mx-auto text-xs text-amber-900 leading-relaxed">
-            <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
-            <div>
-              <strong className="font-bold">Responsible Educational Governance:</strong>{" "}
-              ScholarBridge prioritizes authentic capability building. Industry
-              participation, corporate project briefs, and internship mentorship
-              slots depend on verified institutional MoUs and schedule
-              confirmations. We do not make misleading promises of guaranteed
-              placements, commercial patents, or venture funding.
-            </div>
-          </div>
-        </FadeIn>
-
         {/* CTA */}
-        <div className="mt-10 text-center">
+        <div className="mt-12 text-center">
           <Button
             href="/services/colleges"
             variant="primary"
             size="lg"
             icon={<ArrowRight className="w-4 h-4" />}
           >
-            Explore College Programs
+            Explore All College Programs
           </Button>
         </div>
       </div>

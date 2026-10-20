@@ -1,17 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 import {
   ShieldCheck,
-  Heart,
-  Compass,
   CheckCircle2,
-  Users2,
   ArrowRight,
-  BookOpen,
-  Award,
-  Sparkles,
 } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Badge } from "@/components/ui/Badge";
@@ -27,51 +20,51 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const whoWeServe = [
     {
-      title: "K-12 Schools & School Boards",
+      title: "K-12 Schools & Boards",
       description:
-        "Principals, headmistresses, and coordinators seeking integrated student counselling, age-appropriate wellbeing, and hands-on STEM curricula aligned with NEP 2020.",
+        "Principals and coordinators seeking integrated student counselling, age-appropriate wellbeing, and hands-on STEM curricula aligned with NEP 2020.",
       tag: "School Sector",
     },
     {
-      title: "Colleges & Autonomous Universities",
+      title: "Colleges & Universities",
       description:
-        "Deans, department heads, and placement officers bridging the academic-industry gap through practical capstones, applied AI, and real-world project portfolios.",
+        "Deans, department heads, and placement teams bridging the academic-industry gap through practical capstones, applied AI, and project portfolios.",
       tag: "Higher Education",
     },
     {
-      title: "School & College Educators",
+      title: "Educators & Faculty",
       description:
-        "Teachers and lecturers aiming to master experiential inquiry, inclusive classroom management, and sustainable educator wellness practices.",
+        "Teachers and lecturers mastering experiential inquiry, modern classroom management, and sustainable educator wellness.",
       tag: "Faculty & Staff",
     },
     {
-      title: "Students & Parent Communities",
+      title: "Students & Parents",
       description:
-        "Adolescents seeking anxiety-free career roadmaps, neurodivergent learners needing compassionate support, and parents navigating modern developmental milestones.",
+        "Adolescents seeking anxiety-free career roadmaps, neurodivergent learners needing support, and parents navigating developmental milestones.",
       tag: "Families & Learners",
     },
   ];
 
   const deliveryModels = [
     {
-      title: "1. Diagnostic Institutional Immersion",
+      title: "1. Institutional Immersion & Audit",
       description:
-        "We never impose predetermined cookie-cutter packages. We begin by conducting stakeholder dialogues, understanding timetable constraints, and auditing campus facilities.",
+        "We begin with stakeholder dialogues, timetable assessments, and campus facility audits to understand unique institutional needs.",
     },
     {
-      title: "2. Curriculum Customization & Co-Design",
+      title: "2. Curriculum Customization",
       description:
-        "Our educational team tailors workbooks, laboratory exercises, and lesson plans to your specific student cohort size, regional context, and syllabus framework.",
+        "Our educational team tailors workbooks, laboratory exercises, and lesson plans to your student cohort size and syllabus framework.",
     },
     {
-      title: "3. Experiential, Multi-Modal Delivery",
+      title: "3. Experiential Delivery",
       description:
-        "Led by certified psychologists, industry technologists, and experienced teacher trainers, sessions prioritize peer dialogue, tactile building, and safe reflection.",
+        "Led by certified psychologists, industry technologists, and experienced teacher trainers, sessions prioritize tactile building and safe reflection.",
     },
     {
-      title: "4. Longitudinal Follow-Through & Review",
+      title: "4. Longitudinal Follow-Through",
       description:
-        "Every engagement includes structured post-program evaluation, faculty reflection rubrics, and recommended institutional next steps to ensure sustainable impact.",
+        "Every engagement includes structured post-program evaluation, faculty reflection rubrics, and recommended institutional next steps.",
     },
   ];
 
@@ -87,10 +80,9 @@ export default function AboutPage() {
                 Dedicated to Meaningful, Human-Centred Education.
               </h1>
               <p className="mt-5 text-lg sm:text-xl text-slate-700 font-normal leading-relaxed">
-                ScholarBridge is an educational development organization
-                partnering with schools, colleges, and universities across
-                India to bridge classroom theory with emotional resilience,
-                practical capability, and lifelong career clarity.
+                ScholarBridge partners with schools, colleges, and universities across
+                India to bridge classroom theory with emotional resilience, practical
+                capability, and lifelong career clarity.
               </p>
             </FadeIn>
           </div>
@@ -138,23 +130,16 @@ export default function AboutPage() {
 
                 <div className="space-y-4 text-slate-700 text-base leading-relaxed mt-4">
                   <p>
-                    In an era characterized by hyper-competition, rapid digital
-                    transformation, and shifting workplace demands, traditional
-                    examination scores alone cannot guarantee a student&apos;s
-                    long-term wellbeing or professional fulfilment.
-                  </p>
-                  <p>
-                    Educational institutions face immense pressure to keep pace
-                    with evolving curriculum guidelines, technological disruptions
-                    like Artificial Intelligence, and the rising prevalence of
-                    student stress, digital fatigue, and career anxiety.
+                    Examination scores alone cannot guarantee long-term wellbeing
+                    or career readiness. Today&apos;s educational institutions balance
+                    demanding curriculum guidelines with technological disruptions like
+                    Artificial Intelligence, alongside growing student stress and career anxiety.
                   </p>
                   <p className="font-medium text-navy-950">
-                    ScholarBridge exists to act as an extended capability partner
-                    for educational institutions. We bring qualified child
-                    psychologists, industry software engineers, pedagogy mentors,
-                    and community strategists directly into campuses to build
-                    resilient, high-agency learners.
+                    ScholarBridge acts as an extended capability partner. We bring
+                    qualified child psychologists, software engineers, pedagogy mentors,
+                    and community strategists directly to campuses to cultivate resilient,
+                    capable learners.
                   </p>
                 </div>
 
@@ -202,10 +187,6 @@ export default function AboutPage() {
                       {item.description}
                     </p>
                   </div>
-                  <div className="mt-6 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-xs text-teal-700 font-semibold">
-                    <Users2 className="w-3.5 h-3.5" />
-                    <span>Active Partnership Focus</span>
-                  </div>
                 </div>
               </StaggerItem>
             ))}
@@ -221,7 +202,7 @@ export default function AboutPage() {
               badge="Execution Standard"
               badgeVariant="teal"
               title="Our Program Delivery Model"
-              description="A transparent, four-phase engagement model designed to integrate smoothly with the academic timetable of Indian schools and universities."
+              description="A structured, four-phase engagement model designed to integrate smoothly with the academic timetable of Indian schools and universities."
               align="center"
             />
           </FadeIn>
@@ -239,10 +220,6 @@ export default function AboutPage() {
                   <p className="text-sm text-slate-600 leading-relaxed">
                     {item.description}
                   </p>
-                </div>
-                <div className="mt-4 pt-3 border-t border-slate-200/80 flex items-center gap-2 text-xs text-teal-800 font-medium">
-                  <CheckCircle2 className="w-4 h-4 text-teal-600" />
-                  <span>Quality Assured Milestone</span>
                 </div>
               </div>
             ))}
